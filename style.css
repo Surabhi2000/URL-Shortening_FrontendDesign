@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    display: flexbox;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    background-color: transparent;
+    border: none;
+    padding: 40px auto;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+.navbar-brand{
+    margin: 10px auto;
+}
+
+.navbar-toggler{
+    visibility: collapse;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+
+.navbar-toggler:active{
+    background-color: rgb(185, 184, 185);
+    border: none;
+    border-radius: 20px;
+}
+
+.align-right{
+    text-align: right;
+    display: flexbox;
+}
+.nav-link {
+    color:hsl(0, 0%, 75%);
+    display: inline-block;
+    margin: 5px 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.nav-link:hover{
+    background: none;
+    color:hsl(0, 2%, 51%) ;
+}
+
+.btn-head{
+    margin: 10px;
+    background-color: transparent;
+    border: none;
+    padding: 5px 32px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 0px 2px;
+    cursor: pointer;
+}
+
+.btn-head:hover{
+    border-radius: 30px;
+    background-color: hsl(180, 66%, 49%);
+    color: #fff;
+}
+
+@media (max-width: 400px) {
+    .navbar-toggler{
+        visibility: visible;
+        background-color: rgb(110, 110, 110);
+        padding: 9px;
+        display: inline-block;
+        margin: 25px 0 0 180px;
+    }
+
+    .navbar-collapse{
+        width: 100%;
+        padding: 10px;
+        border-radius: 20px;
+        color: #fff;
+        background-color:  hsl(257, 27%, 26%);
+        display: flex;
+        align-content: center;
+        text-align: center;
+    }
+
+    .navbar-nav{
+        justify-content: center;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .nav-item{
+        display: list-item;
+        list-style: none;
+        margin: 10px 0px;
+    }
+
+    .line{
+        border-top: 1px solid hsl(0, 0%, 48%);
+    }
+}
