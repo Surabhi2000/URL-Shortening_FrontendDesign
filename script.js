@@ -1,12 +1,8 @@
-// Create a request variable and assign a new XMLHttpRequest object to it.
-var request = new XMLHttpRequest()
-
-// Open a new connection, using the GET request on the URL endpoint
-request.open('GET', 'https://https://api.shrtco.de/v2/', true)
-
-request.onload = function () {
-  // Begin accessing JSON data here
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
 }
-
-// Send request
-request.send()
