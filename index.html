@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
   <link rel="stylesheet" href="style.css">
@@ -19,54 +19,48 @@
 </head>
 <body>
 
-  <nav class="navbar" role="navigation">
-
-    <a href="#" class="navbar-brand"> 
+  <div class="topnav" id="myTopnav">
+    <a href="#home" class="active">
       <img src="images/logo.svg">
-    </a>    
+    </a>
+    <div class="nav">
+      <a href="#news"> Features</a>
+    <a href="#contact"> Pricing </a>
+    <a href="#about"> Resources </a>
+
+    <button class="btn-head"> Sign Up </button>
+    <button class="btn-head"> Login </button>
     
-    <button class="navbar-toggler" type="button" data-toggle="collapse" 
-    data-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav navbar-center">
-            <li class="nav-item nav-link"> Features </li>
-            <li class="nav-item nav-link"> Pricing </li>
-            <li class="nav-item nav-link"> Resources </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right line">
-          <li class="nav-item"> <button class="btn-head"> Login </button> </li>
-          <li class="nav-item"> <button class="btn-head"> Sign Up </button> </li>
-        </ul>
-    </div>
-</nav>
-
-<div class="container head">
-  <div class="row">
-
-    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-      <div class="content1">
-        <h1 class="heading">
-          More than just shorter links
-        </h1>
-        <p class="head-para">
-          Build your brand’s recognition and get detailed insights 
-          on how your links are performing.
-        </p>
-        <button class="btn-start">Get Started</button>
-      </div>
-    </div>
-
-    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-      <img src="images/illustration-working.svg" class="head-image">
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
     </div>
   </div>
-</div>
   
+  <div class="container head">
+    <div class="row">
+
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="content1">
+          <h1 class="heading">
+            More than just shorter links
+          </h1>
+          <p class="head-para">
+            Build your brand’s recognition and get detailed insights 
+            on how your links are performing.
+          </p>
+          <button class="btn-start">Get Started</button>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <img src="images/illustration-working.svg" class="head-image">
+      </div>
+    </div>
+  </div>
   
-  Shorten a link here...
+  <!-- 
+    Shorten a link here...
 
   Shorten It!
 
@@ -112,6 +106,7 @@
   Our Team
   Careers
   Contact
+  -->
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
