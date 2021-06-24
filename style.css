@@ -99,7 +99,7 @@
 }
 
 .form-section{
-    background-color:hsl(0, 6%, 86%);
+    background-color: #F0F1F6;
     margin-top: 120px;
 }
 
@@ -256,7 +256,7 @@
 .footer-section{
     background-color: #000;
     color: #fff;
-    padding: 5rem;
+    padding: 6rem;
 }
 
 .footer{
@@ -288,9 +288,11 @@
 }
 
 .attribution{
-    background-color: hsl(257, 27%, 26%);
+    background-color: transparent;
+    margin-top: -40px;
     color: #fff;
     padding: 1rem;
+    
 }
 
 .attribution a{
@@ -455,6 +457,7 @@
         transform: translateY(0%);
     }
 }
+
 
 .moveUp{
     animation: moveUP .8s 1 linear;
