@@ -226,7 +226,6 @@
     background-color: hsl(257, 27%, 26%);
     position: relative;
     z-index: 1;
-    padding: 5rem;
 }
 
 .boost::before{
@@ -290,7 +289,7 @@
 
 .attribution{
     background-color: transparent;
-    margin-top: -40px;
+    margin-top: -60px;
     color: #fff;
     padding: 1rem;
     
