@@ -99,13 +99,14 @@
 
 .content1{
     justify-content: center;
-    margin-top: 50px;
+    margin-top: -40px;
     text-align: left;
 }
 
 .heading{
     font-size: 60px;
     font-weight: 600;
+    margin-top: 150px;
 }
 
 .head-para{
@@ -128,7 +129,183 @@
 
 .head-image{
     width: 600px;
-    height: fit-content;
+    height:max-content;
+}
+
+.form-section{
+    background-color: rgb(224, 224, 224);
+    margin-top: 100px;
+}
+
+.input-box{
+    background-color: hsl(257, 27%, 26%);
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 5rem;
+    background-image: url('./images/bg-shorten-desktop.svg');
+    border: 1px solid transparent;
+    border-radius: .5rem;
+    transform: translateY(-45%); 
+}
+
+.input-box form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.input-box form input{
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    border: transparent;
+    border-radius: .5rem;
+    margin-right: 2rem;
+    outline: none;
+}
+
+.input-box form .link-btn{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    width: 20%;
+    background-color: hsl(180, 66%, 49%);
+    border: transparent;
+    outline: none;
+    width: fit-content;
+    padding: 1.5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+}
+
+.input-box form .link-btn:hover{
+    background-color: hsl(180, 58%, 62%);
+    color: #fff;
+}
+
+.about{
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.about h2{
+    font-size: 4rem;
+    font-weight: 700;
+    color: hsl(257, 27%, 26%);
+}
+
+.feature{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+.feature::after{
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    width: 60%;
+    height: .5rem;
+    background-color: hsl(180, 66%, 49%);
+    
+}
+
+.feature-box{
+    position: relative;
+    background-color: #fff;
+    padding: 7rem 3rem 1rem 3rem;
+    border-radius: .5rem;
+    z-index: 1;
+    margin-bottom: 10px;
+}
+
+.feature-box:not(:last-child){
+    margin-right: 2.5rem;
+}
+
+.feature-image{
+    display: inline-block;
+    background-color: hsl(257, 27%, 26%);
+    padding: 1.5rem;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    position: absolute;
+    top: -3.5rem;
+    left: 2.5rem; 
+}
+
+.feature-box h3{
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    color: hsl(257, 27%, 26%);
+    padding-bottom: 1.5rem;
+}
+
+.box2{
+    margin-top: 5%;
+    width: fit-content;
+}
+
+.box3{
+    margin-top: 8%;
+    margin-right: 60px;
+}
+
+.boost{
+    width: 100%;
+    background-color: hsl(257, 27%, 26%);
+    position: relative;
+    z-index: 1;
+}
+
+boost::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200rem;
+    height: 100%;
+    background-image: url(./images/bg-boost-desktop.svg);
+}
+
+.boost{
+    display: block;
+    text-align: center;
+    z-index: ;
+}
+
+.boost h2{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
+
+@media (max-width: 925px){
+    .about{
+        width: 100%;
+        padding-bottom: 6rem;
+    }
+
+    .about h2{
+        font-size: 3rem;
+    }
+
+    .feature-box{
+        padding: 7rem 2rem 3rem 2rem;
+    }
+
+    .feature-box:not(:last-child){
+        margin-right: 1.5rem;
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -145,8 +322,54 @@
     }
 
     .head-image{
-        width: 310px;
+        width: 330px;
         height: 300px;
     }
+
+    .feature{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .feature::after{
+        left: 50%;
+        top: 20%;
+        height: 50rem;
+        width: .5rem;
+    }
+
+    .feature-box {
+        margin-bottom: 8rem;
+    }
+
+    .feature-box:not(:last-child){
+        margin-right: 0;
+    }
+
+    .feature-image{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .box2, .box3{
+        margin-top: 0;
+    }
+
+    .input-box{
+        padding: 1.4rem;
+    }
+
+    .input-box form input{
+        width: 90%;
+        font-size: 13px;
+    }
+
+    .input-box form .link-btn{
+        width: 40%;
+        word-wrap:normal;
+        font-size: 11px;
+    }
+
+
 
 }
