@@ -226,6 +226,7 @@
     background-color: hsl(257, 27%, 26%);
     position: relative;
     z-index: 1;
+    padding: 5rem;
 }
 
 .boost::before{
