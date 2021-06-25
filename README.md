@@ -1,4 +1,4 @@
-# Frontend Mentor - Shortly URL shortening API Challenge
+# Frontend Mentor - Shortly URL shortening API Challenge [Watch Live](https://frontend-url-shortly.netlify.app)
 
 ![Design preview for the Shortly URL shortening API coding challenge](./design/desktop-preview.jpg)
 
